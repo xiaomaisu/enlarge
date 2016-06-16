@@ -1,0 +1,52 @@
+* {
+   margin:0;
+   padding:0;
+}
+img {
+   border:0;
+}
+.image-wrap {
+   width:418px;
+   height:418px;
+   position:relative;
+   border:1px solid rgba(0,0,0,0.5);
+}
+
+.image-wrap img {
+   max-width:100%;
+   max-height:100%;
+}
+.image-wrap .image-cursor{
+   width:218px;
+   height:218px;
+   cursor:move;
+   background-attachment:scroll;
+   display:block;
+   background-image: url(https://img-tmdetail.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png);
+   background-color:transparent;
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:5;
+}
+.image-overlay { 
+   position:absolute;
+   width:418px;
+   height:418px;
+   top:20px;
+   left:422px;
+   border:1px solid #ccc;
+   overflow:hidden;
+   z-index:1999;
+   text-align:center;
+   visibility: hidden;
+}
+.image-overlay .overlay-content {
+   height:100%;
+   padding-bottom:0;
+}
+.image-overlay .overlay-content img {
+   position:absolute;
+   left:0;
+   top:0;
+}
